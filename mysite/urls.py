@@ -13,9 +13,16 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+# proyecto/urls.py
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from django.http import HttpResponse
+
+# Una vista simple para la página principal
+def home_view(request):
+    return HttpResponse("<h1>Bienvenido a Dashboard Whasa.Shop con Django!</h1>")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-]
+    path('', home_view, name='home'),  # Ruta para la página principal
+] 
