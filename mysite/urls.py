@@ -20,7 +20,7 @@ from django.http import HttpResponse
 
 # Una vista simple para la página principal
 def home_view(request):
-    return HttpResponse("<h1>Bienvenido a Dashboard Whasa.Shop con Django!</h1>")
+    return HttpResponse("<h1>Bienvenido a Dashboard Whasa.Shop con Django, modificacion desde github!</h1>")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
