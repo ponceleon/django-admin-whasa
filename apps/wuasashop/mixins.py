@@ -1,11 +1,14 @@
 import xmlrpc.client
 from rest_framework.response import Response
 from rest_framework import status
+import environ
 
-url = 'https://productos.digital'
-db = 'odoo'
-username = 'admin'
-password = 'admin'
+env = environ.Env()
+
+url = env("ODOO_URL") 'https://productos.digital'
+db = env("ODOO_DB")'odoo'
+username = env("ODOO_USER") 'admin'
+password = env("ODOO_PASS") 'admin'
 
 
 class OdooConnectionMixin:
