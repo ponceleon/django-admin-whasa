@@ -5,10 +5,10 @@ import environ
 
 env = environ.Env()
 
-url = env("ODOO_URL") 'https://productos.digital'
-db = env("ODOO_DB")'odoo'
-username = env("ODOO_USER") 'admin'
-password = env("ODOO_PASS") 'admin'
+url = env("ODOO_URL") 
+db = env("ODOO_DB")
+username = env("ODOO_USER")
+password = env("ODOO_PASS")
 
 
 class OdooConnectionMixin:
