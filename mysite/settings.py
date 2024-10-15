@@ -33,7 +33,7 @@ ALLOWED_HOSTS = ["*"]
 
 # FORM SUBMISSION
 # Comment out the following line and place your railway URL, and your production URL in the array.
-CSRF_TRUSTED_ORIGINS = ["*", "faithful-delight-production.up.railway.app", "negocio.whasa.shop"]
+CSRF_TRUSTED_ORIGINS = ["*", "https://faithful-delight-production.up.railway.app", "https://negocio.whasa.shop"]
  
 # Application definition
 
